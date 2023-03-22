@@ -1,0 +1,13 @@
+name: 'Automated Code Review'
+description: 'Provide automated code review comments for pull requests'
+author: 'AI Code Pal Contributors'
+inputs:
+  github_token:
+    description: 'GitHub token for accessing the repository'
+    required: true
+  openai_api_key:
+    description: 'OpenAI API key for generating the suggestions'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
